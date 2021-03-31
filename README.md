@@ -1,2 +1,1 @@
-# R1
-SAYA RIZUNI01 DAN BISA DI PANGIL R1 (;
+ 20 lines (15 sloc)  595 Bytes
