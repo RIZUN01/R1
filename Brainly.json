@@ -1,0 +1,25 @@
+const  brainly  =  membutuhkan ( 'brainly-scraper' )
+
+modul . ekspor  =  BrainlySearch  =  ( pertanyaan ,  jumlah ,  cb )  =>  {
+    brainly ( pertanyaan . toString ( ) , Number ( jumlah ) ) . kemudian ( ( res )  =>  {
+        let  brainlyResult  =  [ ]
+        res . data . forEach ( ( ask )  =>  {
+            biarkan  opt  =  {
+                pertanyaan : tanya . pertanyaan ,
+                fotoPertanyaan : tanyakan . questionMedia
+            }
+            tanya . jawaban . forEach ( answer  =>  {
+                memilih . jawaban  =  {
+                    judulJawaban : jawaban . teks ,
+                    fotoJawaban : jawaban . media
+                }
+            } )
+            brainlyResult . dorong ( opt )
+            } )
+            kembali  brainlyResult
+    } ) . lalu ( x  =>  {
+        cb ( x )
+    } ) . tangkap ( err  =>  {
+        konsol . log ( err . error )
+    } )
+}
